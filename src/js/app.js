@@ -24,3 +24,7 @@ function changeUnits(checkbox) {
 }
 
 gm.info.watchVehicleData(showSpeed, ['average_speed'])
+
+function tester(){
+  window.location.href = './tester.html';
+}
