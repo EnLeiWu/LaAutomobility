@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+#mapid { 
+  height: 768px;
+  width: 1280px;
+   }
+
+
 #close {
   position: absolute;
   top: 90px;

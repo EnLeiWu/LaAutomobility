@@ -10,6 +10,7 @@
     <!-- Your custom files -->
     <link rel="stylesheet" href="css/app.css" type="text/css">
 
+
     <script src="GMLIB/system.js"></script>
     <script src="GMLIB/info.js"></script>
     <!-- Uncomment libraries as you need them: -->
@@ -23,18 +24,30 @@
     <!-- <script src="GMLIB/util.js"></script> -->
     <!-- <script src="GMLIB/voice.js"></script> -->
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+
+   <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
   </head>
   <body>
     <div id="wrapper">
       <div id="close"><img src="images/close.png" onclick="gm.system.closeApp()" alt="close"></div>
       <div id="main">
-
+<!-- 
         <h1>spod</h1>
         <div class="instruments">
           <div id="speed">??</div>
           <div id="units">---</div>
+        </div> -->
+
+        <div id="mapid">
         </div>
 
+<!-- 
         <span id="mph">mph</span>
         <label class="switch">
           <input id="unitSwitch" type="checkbox" onclick='changeUnits(this);'>
@@ -42,12 +55,15 @@
         </label>
         <span id="kmh">km/h</span>
         <button type="button" onclick=tester()>123</button>
-        <a href="./tester.html">tester page</a>
+        <a href="./tester.html">tester page</a> -->
 
       </div>
     </div>
 
     <!-- Your app code: -->
+    
     <script src="js/app.js"></script>
+    <script src="js/leafletembed.js"></script>
+
   </body>
 </html>
